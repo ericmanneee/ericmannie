@@ -1,0 +1,42 @@
+body{
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+}
+.container{
+    text-align: center;
+    background-image: linear-gradient( brown, bisque);
+    width: 75%;
+    height: 50vh;
+    margin: 100px 0;
+    border-radius: 50px 50px 0 0;
+    box-shadow: -5px -5px 7px rgb(207, 88, 88);
+
+}
+label{
+    display: block;
+    margin: 5px;
+}
+input{
+    width: 80%;
+    border: none;
+    padding: 5px;
+    background-color: bisque;
+}
+button{
+    display: block;
+    margin: 10px 125px;
+    width: 50%;
+    padding: 3px;
+    background-color: brown;
+    border: none;
+    color: bisque;
+    font-size: 1rem;
+    font-family: cursive;
+}
+#result{
+    font-weight: bold;
+    color: brown;
+    margin-top: 30px;
+}

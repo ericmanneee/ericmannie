@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(240, 240, 248);
+}
+.container{
+    margin: 50px 15px;
+    background-color: rgb(94, 94, 212);
+    height: 85vh;
+    border-radius: 8px;
+    box-shadow: -2px -2px 5px rgb(94, 94, 212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(232, 232, 249);
+    font-family: sans-serif;
+}
+.text{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+input{
+   border: none;
+   padding: 3px;
+   background-color: rgb(232, 232, 249);
+   border-radius: 3px;
+}
+button{
+    margin: 10px;
+    padding: 8px;
+    width: 30%;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover{
+    background-color: rgb(131, 131, 210);
+    color: rgb(229, 229, 242);
+}
+#result{
+    font-weight: bold;
+    margin-top: 30px;
+}

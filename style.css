@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.background{
+    background-color: #ddf4ec;
+    border-radius: 7px;
+    margin-top: 60px;
+    box-shadow: -2px -2px 10px #ddf4ec;
+    padding: 0 10px;
+}
+h1{
+    text-align: center;
+}
+label{
+    display: block;
+    margin: 5px 0;
+    color: green;
+}
+input{
+    width: 97%;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+}
+button{
+    width: 99%;
+    height: 30px;
+    margin: 15px 0;
+    background-color: rgb(41, 175, 31);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+span{
+    color: black;
+    font-weight: bold;
+}
