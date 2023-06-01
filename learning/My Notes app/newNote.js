@@ -4,10 +4,9 @@ const input = document.querySelector('.textarea')
 const saveEl = document.getElementById('save')
 const filenameEl = document.getElementById('filename')
 
-
 getNote()
 function getNote(){
-    input.value = localStorage.getItem(filename)
+    input.value = localStorage.getIte("filename")
 }
 
 function saveData(){
