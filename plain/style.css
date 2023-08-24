@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+#container{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: yellow;
+    margin: 0;
+}
+#animate{
+    position: absolute;
+    color: red;
+    transition: ease-in-out;
+}

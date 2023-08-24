@@ -1,0 +1,47 @@
+.highlight{
+    background-color: yellow;
+}
+.error{
+    background-color: lightcoral;
+    border: red;
+}
+h1{
+    text-align: center;
+}
+body{
+    font-family: cursive;
+    text-align: center;
+    font-size: 1.1rem;
+}
+input{
+    padding: 5px;
+    border-radius: 5px;
+}
+button{
+    background: black;
+    color: white;
+    padding: 5px;
+    border-radius: 10%;
+    transition: 0.5s;
+    cursor: pointer;
+    border: 1px solid
+}
+button:hover{
+    background: white;
+    color: black;
+    padding: 7px;
+
+}
+#message-box{
+    width: 80%;
+    height: 20%;
+    background-color: #000;
+    color: #fff;
+    padding: 0.2%;
+    opacity: 0.85;
+    position: absolute;
+    left: 10%;
+    top: -100%;
+    transition: 0.5s ease-out;
+    border-radius: 5px;
+}
