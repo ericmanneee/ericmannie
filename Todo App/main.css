@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+#watermark{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, grey, black);
+    position: fixed;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#circle1{
+    width: 40%;
+    height: 100%;
+    
+    border-radius: 50%;
+    transform-origin: center;
+    transition: 5s;
+    animation: rotate 10s infinite linear;
+    background-color: white;
+    opacity: 0.3;
+    
+}
+#circle2{
+    width: 40%;
+    height: 100%;
+    border-radius: 50%;
+    transform-origin: center;
+    position: absolute;
+    transform: rotate(315deg);
+    animation: rotate2 10s infinite linear;
+    transition: 5s;
+    background-color: white;
+    opacity: 0.3;
+
+    
+}
+#circle3{
+    width: 40%;
+    height: 100%;
+    border-radius: 50%;
+    transform-origin: center;
+    position: absolute;
+    transform: rotate(45deg);
+    animation: rotate3 10s infinite linear;
+    transition: 5s;
+    background-color: white;
+    opacity: 0.3;
+}
+
+@keyframes rotate{
+    from{background-color: black;
+        transform: rotatex(0deg);}
+    to{background-color: white;
+        transform: rotatey(360deg)}
+}
+@keyframes rotate2{
+    from{background-color: black;
+        transform: rotatey(0deg);}
+    to{background-color: white;
+        transform: rotatez(360deg)}
+}
+@keyframes rotate3{
+    from{background-color: black;
+        transform: rotatey(0deg);}
+    to{background-color: white;
+        transform: rotatez(-360deg)}
+}
+#app{
+    width: 50vw;
+    min-height: 0;
+    background: linear-gradient(135deg, white, grey);
+    opacity: 0.65;
+    margin: 10px;
+    align-items: center;
+    padding: 3%;
+    border-radius: 10px;
+
+}
+
+#animation{
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    width: 30%;
+    height: 30%;
+    display: flex;
+    animation: move linear 30s infinite;
+}
+@keyframes move{
+    0%{
+        left: -5%;
+        top: -5%;
+
+    }
+    20%{
+        left: 90%;
+        top: 80%;
+
+    }
+    40%{
+        left: 1%;
+        top: 90%;
+    
+    }
+    80%{
+        left: 90%;
+        top: 1%;
+    
+    }
+    100%{
+        left: -5%;
+        top: -5%;
+}
+}
+h1{
+   font-size: 1.2rem;
+   text-align: center;
+}
+input{
+    width: 75%;
+    background-color: transparent;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    height: 9%;
+    color: white;
+    padding: 3%;
+    margin: 5%;
+}
+#row{
+    background: black;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+    margin: 5px 0;
+}
+button{
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    transition: 0.5s ease-in-out;
+
+}
+button:hover{
+    background-color: grey;
+    color: black;
+}
+ul li{
+    list-style: none;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(CHECKED.png);
+
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+}
+ul li span:hover{
+    background-color: #555;
+    color: white;
+}
