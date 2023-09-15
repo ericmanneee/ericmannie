@@ -32,6 +32,7 @@ button, a{
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.61);
   transition: 0.3s ease-in-out;
   cursor: pointer;
+  font-weight: 500;
 }
 button:hover, a:hover{
   padding: 0.7rem 1.5rem;
