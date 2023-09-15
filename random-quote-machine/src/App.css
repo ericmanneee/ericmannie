@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.background{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+#quote-box{
+  max-height: 600px;
+  width: 400px;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.61);
+  text-align: left;
+  opacity: 0.6;
+}
+#author{
+  text-align: right;
+}
+button, a{
+  height: 40px;
+  padding: 0.6rem 1.2rem;
+  color: white;
+  font-family: inherit;
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.61);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+button:hover, a:hover{
+  padding: 0.7rem 1.5rem;
+}
